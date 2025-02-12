@@ -1,0 +1,19 @@
+---
+- name: Base Server Setup
+  hosts: all
+  become: yes
+  tasks:
+    - name: Update packages
+      apt:
+        update_cache: yes
+        upgrade: dist
+
+    - name: Install essential packages
+      apt:
+        name: ["htop", "tmux", "curl", "fail2ban"]
+        state: present
+
+    - name: Ensure UFW is enabled
+      ufw:
+        state: enabled
+        policy: deny
