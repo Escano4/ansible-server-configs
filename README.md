@@ -19,4 +19,4 @@
    ```bash
    ansible-playbook -i inventory.yml playbook.yml
 ## Лицензия
-MIT License. Подробнее в файле LICENSE.
+MIT License. Подробнее в файле [LICENSE](LICENSE).
