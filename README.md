@@ -14,7 +14,7 @@
    sudo apt install ansible
 2. Скачайте репозиторий::
    ```bash
-   git clone https://github.com/ваш_логин/ansible-server-configs.git
+   git clone https://github.com/Escano4/ansible-server-configs.git
 3. Запустите плейбук:
    ```bash
    ansible-playbook -i inventory.yml playbook.yml
